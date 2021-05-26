@@ -1,0 +1,70 @@
+@import "colors.scss";
+
+.btn {
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: -2px;
+}
+
+.cta-btn {
+	font-size: 1.1rem;
+	background-color: #fff;
+	padding: 0.9rem 1.8rem;
+	color: var(--body-font-color);
+	border-radius: 0.4rem;
+	transition: background-color 0.5s; 
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+	color: #fff;
+	background-color: var(--secondary-font-color);
+}
+
+.body-btn {
+	font-size: 1.5rem;
+	color: var(--secondary-font-color);
+	position: relative;
+	transition: color 0.5s;
+}
+
+.body-btn:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 100%;
+	height: 2px;
+	background-color: var(--secondary-font-color);
+	transition: background-color 0.5s;
+}
+
+.body-btn:hover,
+.body-btn:focus {
+	transition: 0.5s ease-in-out all;
+	color: var(--main-font-color-dark);
+	-webkit-transition: 0.5s ease-in-out all;
+	-moz-transition: 0.5s ease-in-out all;
+	-ms-transition: 0.5s ease-in-out all;
+	-o-transition: 0.5s ease-in-out all;
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before {
+	background-color: var(--main-font-color-dark);
+}
+
+.newsletter-btn {
+	background-color: transparent;
+	border: none;
+	color: var(--main-font-color-dark);
+	cursor: pointer;
+	font-size: 1.6rem;
+	padding: 1px 0.6rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 10.5rem;
+}
